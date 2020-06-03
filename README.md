@@ -46,6 +46,7 @@ git clone https://github.com/GSG-K3/foods-hooks.git
 **Front End**:
 
 - [React Framework](https://reactjs.org/)
+  - React Hooks
 - [Material UI](https://material-ui.com/)
 
 ## Team members
