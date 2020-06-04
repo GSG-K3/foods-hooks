@@ -3,7 +3,6 @@
 
 ## **Contents**
 
-1. [Heroku Link](#heroku-link)
 2. [Figma Link](#figma-link) 
 3. [Description](#description)
 4. [User Story](#user-story)
@@ -13,7 +12,7 @@
 
 ---
 
-## Heroku Link
+
 
 ## Figma Link
 
