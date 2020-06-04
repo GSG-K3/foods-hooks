@@ -9,6 +9,7 @@ import {
   Typography,
   Tab,
 } from '@material-ui/core';
+
 const useStyles = makeStyles({
   root: {
     width: 160,
@@ -23,13 +24,6 @@ export default ({ handleCategoryClick }) => {
   const classes = useStyles();
   const [category, setCategory] = useState([]);
 
-
-  const get = () =>{
-
-    
-  }
-
-
   useEffect(() => {
     axios
       .get('https://www.themealdb.com/api/json/v1/1/categories.php')
@@ -40,11 +34,11 @@ export default ({ handleCategoryClick }) => {
   return category.map((item, index) => {
     return (
       <Tab
+        key={index}
         label={
           <Card
-            key={index}
             className={classes.root}
-            // onClick={() => handleCategoryClick(item.idCategory)}
+            onClick={() => handleCategoryClick(item.strCategory)}
           >
             <CardActionArea>
               <CardMedia
@@ -53,7 +47,7 @@ export default ({ handleCategoryClick }) => {
                 title="Contemplative Reptile"
               />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="h3">
+                <Typography gutterBottom variant="button" display="block">
                   {item.strCategory}
                 </Typography>
               </CardContent>

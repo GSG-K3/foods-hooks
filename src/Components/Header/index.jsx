@@ -68,7 +68,7 @@ export default (props) => {
                   }}
                 />
 
-                <Tab
+                {/* <Tab
                   label="Meal By Area"
                   className={classes.tab}
                   onClick={() => {
@@ -76,7 +76,7 @@ export default (props) => {
                       pathname: '/meals-by-area',
                     });
                   }}
-                />
+                /> */}
               </Tabs>
             </div>
           </div>
