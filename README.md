@@ -20,7 +20,7 @@
 https://www.figma.com/file/WZKJ9MllDAWOzPEoL2D4hX/Untitled?node-id=0%3A1
 
 ## Description
-The website designs to help the hungry users :yum: to make their favourite dishes, where they can search on any meal, browse its ingredients and way of cooking it by text/video.
+The website designs to serve hungry users and do them a favor :yum: by showing them ways of making their favourite dishes. where they can search on any meal, browse its ingredients and read or watch how to cook it by text/video.
 The site has been build using API & Hooks :octocat:
   - Reference 
     https://www.themealdb.com/
