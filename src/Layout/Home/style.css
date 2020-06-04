@@ -1,0 +1,13 @@
+.home{
+    margin-top: 70px;
+}
+.home p {
+    width: 500px;
+    display: flex;  
+   font-size:30px; 
+   justify-content: center;
+   align-items: center;
+}
+.link{
+    margin-left: 20px;
+}
