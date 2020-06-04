@@ -53,11 +53,7 @@ export default () => {
         setMealsCount(result.data.meals.length);
         const meals = result.data.meals.map((item, index) => {
           return (
-            <Link
-              key={index}
-              to={`/meal/${item.idMeal}`}
-              className={classes.mealCard}
-            >
+            <Link className={classes.mealCard} href={`/meal/${item.idMeal}`}>
               <MealCard
                 id={item.idMeal}
                 getNew={false}
