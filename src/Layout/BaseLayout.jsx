@@ -3,9 +3,7 @@ import { Grid } from '@material-ui/core';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import NavBar from '../Components/Header';
 import Home from './Home';
-import One from '../Components/One';
-import Two from '../Components/Two';
-import Three from '../Components/Three';
+import Category from './Categories/index';
 export default () => (
   <React.Fragment>
     <Router>
@@ -14,15 +12,15 @@ export default () => (
           <Route component={NavBar} />
         </Grid>
         <Grid container item>
-          <Grid sx={0} sm={3} />
-          <Grid sx={12} sm={9}>
+          <Grid sx={0} sm={1} />
+          <Grid sx={12} sm={10}>
             <Switch>
-              <Route exact path="/" component={One} />
-              <Route exact path="/category" component={Two} />
-              <Route exact path="/meals-by-area" component={Three} />
+              {/* <Route exact path="/" component={Home} /> */}
+              <Route exact path="/category" component={Category} />
+              {/* <Route exact path="/meals-by-area" component={{}} /> */}
             </Switch>
           </Grid>
-          <Grid sx={0} sm={3} />
+          <Grid sx={0} sm={1} />
         </Grid>
       </Grid>
     </Router>
