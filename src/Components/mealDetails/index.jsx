@@ -55,8 +55,7 @@ const Styles = makeStyles((theme) => ({
 
 export default function MealDetails(props) {
   const classes = Styles();
-  const id= '52780';
-  // const id = props.match.params.id;
+  const id = props.match.params.id;
   let [meal, mealFn] = useState([]);
   let [ingredient, setIngredient] = useState([]);
 
