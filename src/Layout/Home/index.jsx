@@ -3,10 +3,12 @@ import MealCard from '../../Components/MealCard/MealCard';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { Grid } from '@material-ui/core';
+import LoaderProgress from '../../Components/LoaderProgress';
 import './style.css';
 
 export default () => {
   const [data, setData] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
   const req1 = axios.get('https://www.themealdb.com/api/json/v1/1/random.php');
   const req2 = axios.get('https://www.themealdb.com/api/json/v1/1/random.php');
   const req3 = axios.get('https://www.themealdb.com/api/json/v1/1/random.php');
@@ -25,11 +27,13 @@ export default () => {
           return meal.data.meals[0];
         });
         setData(randommeals);
+        setIsLoading(false);
       })
     );
   }, []);
   return (
     <div className="home">
+      <LoaderProgress isLoading={isLoading} />
       <p>
         Welcome to Yam Restaurant may your day be as wonderful as the first sip
       </p>
