@@ -3,12 +3,12 @@
 
 ## **Contents**
 
-2. [Figma Link](#figma-link) 
-3. [Description](#description)
-4. [User Story](#user-story)
-5. [How to run the project](#How-to-run-the-project-locally)
-6. [Used technologies](#used-technologies)
-7. [Team members](#team-members)
+1. [Figma Link](#figma-link) 
+2. [Description](#description)
+3. [User Story](#user-story)
+4. [How to run the project](#How-to-run-the-project-locally)
+5. [Used technologies](#used-technologies)
+6. [Team members](#team-members)
 
 ---
 
