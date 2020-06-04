@@ -1,8 +1,7 @@
 import React , { useState, useEffect }  from 'react';
 import axios from 'axios'; 
 import { makeStyles } from '@material-ui/core/styles';
-import { Card,CardActionArea,CardContent,CardMedia } from '@material-ui/core';
-import Typography from '@material-ui/core/Typography';
+import { Card,CardActionArea,CardContent,CardMedia , Typography} from '@material-ui/core';
 const useStyles = makeStyles({
     root: {
       width: 250,
@@ -20,7 +19,7 @@ export default ({id}) => {
     axios.get(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`)
     
     .then(result => {
-        console.log(result.data.meals[0]);
+  
         
     setData(result.data.meals[0])
     })
