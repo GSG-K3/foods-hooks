@@ -36,11 +36,6 @@ export default (props) => {
                   className={classes.menuButton}
                   color="inherit"
                   aria-label="open drawer"
-                  // onClick={() => {
-                  //   props.history.push({
-                  //     pathname: '/',
-                  //   });
-                  // }}
                 >
                   <LocalDining />
                   <OutdoorGrill />
