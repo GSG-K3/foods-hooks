@@ -67,16 +67,6 @@ export default (props) => {
                     });
                   }}
                 />
-
-                {/* <Tab
-                  label="Meal By Area"
-                  className={classes.tab}
-                  onClick={() => {
-                    props.history.push({
-                      pathname: '/meals-by-area',
-                    });
-                  }}
-                /> */}
               </Tabs>
             </div>
           </div>
